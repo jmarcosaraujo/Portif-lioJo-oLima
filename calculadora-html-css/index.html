@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora</h1>
+        <form>
+            <input type="number" id="num1" placeholder="Número 1" required>
+            <input type="number" id="num2" placeholder="Número 2" required>
+            <select id="oper">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        function calcular() {
+            var n1 = parseFloat(document.getElementById('num1').value);
+            var n2 = parseFloat(document.getElementById('num2').value);
+            var oper = document.getElementById('oper').value;
+            var res;
+            switch(oper){
+                case "+": res = n1 + n2; break;
+                case "-": res = n1 - n2; break;
+                case "*": res = n1 * n2; break;
+                case "/": res = n2 !== 0 ? n1 / n2 : "Erro: Divisão por zero"; break;
+            }
+            document.getElementById('resultado').innerText = "Resultado: " + res;
+        }
+    </script>
+</body>
+</html>
