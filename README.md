@@ -26,3 +26,24 @@
 </body>
 </html>
 
+# Portfólio João Marcos Araújo
+
+Portfólio pessoal em HTML, CSS e JavaScript, com animações sutis e design responsivo.
+
+## Estrutura
+
+- **index.html**: Página principal do portfólio.
+- **style.css**: Estilos e animações.
+- **script.js**: Animações de scroll.
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## Como visualizar
+
+1. Clonar o repositório:
+
+
